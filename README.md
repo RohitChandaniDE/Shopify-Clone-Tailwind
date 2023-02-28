@@ -3,7 +3,7 @@
 
 ![Tech](https://img.shields.io/badge/HTML-Tailwind-blue)
 ![FSJS](https://img.shields.io/badge/FSJS%20Bootcamp-Hitesh%20Choudhary-orange)
-![Time](https://img.shields.io/badge/TIME%20TAKEN-9.5%20Hrs-red)
+![Time](https://img.shields.io/badge/TIME%20TAKEN-11%20Hrs-red)
 ![Responsive](https://img.shields.io/badge/Mobile%20Responsive%20-Yes-brightgreen)
 
 ***
