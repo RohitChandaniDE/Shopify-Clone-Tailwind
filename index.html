@@ -12,189 +12,198 @@
 <body class="container mx-auto">
   <!-- Navbar -->
 <section class="bg-yellow-50 pb-2 sticky top-0 z-50">
-  <nav class="flex justify-center gap-[35px] pt-2 cursor-pointer">
-    <div class="logo"><img class="w-40" src="images/shopify-logo.svg" alt="logo"></div>
-    <div class="flex font-sans text-xl font-medium gap-2 mr-[500px]">
-      <li class="hover:underline list-none text-xl pt-6">Start</li>
-      <button class="rotate-90 text-lg font-bold" type="button">></button>
-      <li class="hover:underline list-none text-xl pt-6">Sell</li>
-      <button class="rotate-90 text-lg font-bold" type="button">></button>
-      <li class="hover:underline list-none text-xl pt-6">Market</li>
-      <button class="rotate-90 text-lg font-bold" type="button">></button>      
-      <li class="hover:underline list-none text-xl pt-6">Manage</li>
-      <button class="rotate-90 text-lg font-bold" type="button">></button> 
+  <nav class="flex justify-center sm:gap-[35px] gap-[150px] pt-2 cursor-pointer">
+    <div class="logo flex">
+      <img class="xl:w-40 w-28 pt-2  sm:pt-0" src="images/shopify-logo.svg" alt="logo">
+      <div class="hamburger inline-block cursor-pointer p-1 pt-7 sm:hidden">
+        <div class="line h-0.5 w-6 my-1 bg-black"></div>
+        <div class="line h-0.5 w-6 my-1 bg-black"></div>
+        <div class="line h-0.5 w-6 my-1 bg-black"></div>
+      </div>
     </div>
-    <div class="flex font-sans text-xl font-medium gap-2">
-      <li class="hover:underline list-none text-xl pt-6">Pricing</li>
-      <li class="hover:underline list-none text-xl pt-6">Learn</li>
-      <button class="rotate-90 text-lg font-bold" type="button">></button> 
-      <li class="hover:underline list-none text-xl pt-6">Log in</li>
+    
+    <div class="hidden sm:flex font-sans text-xl font-medium gap-2 2xl:mr-[500px] xl:mr-[250px] lg:mr-[100px] mr-[70px]">
+      <li class="hover:underline list-none xl:text-xl lg:text-base text-xs pt-6">Start</li>
+      <button class="rotate-90 xl:text-lg lg:text-base text-xs font-bold mt-1.5 lg:mt-4 xl:mt-0 sm:mt-2" type="button">></button>
+      <li class="hover:underline list-none xl:text-xl lg:text-base text-xs pt-6">Sell</li>
+      <button class="rotate-90 xl:text-lg lg:text-base text-xs font-bold mt-1.5 lg:mt-4 xl:mt-0 sm:mt-2" type="button">></button>
+      <li class="hover:underline list-none xl:text-xl lg:text-base text-xs pt-6">Market</li>
+      <button class="rotate-90 xl:text-lg lg:text-base text-xs font-bold mt-1.5 lg:mt-4 xl:mt-0 sm:mt-2" type="button">></button>      
+      <li class="hover:underline list-none xl:text-xl lg:text-base text-xs pt-6">Manage</li>
+      <button class="rotate-90 xl:text-lg lg:text-base text-xs font-bold mt-1.5 lg:mt-4 xl:mt-0 sm:mt-2" type="button">></button> 
     </div>
-    <div><button class="text-white font-bold px-5 py-4 bg-green-600
-      text-xl rounded-lg text-center mt-2 hover:opacity-80 shadow-lg
+    <div class="hidden sm:flex font-sans text-xl font-medium gap-2">
+      <li class="hover:underline list-none xl:text-xl lg:text-base text-xs pt-6">Pricing</li>
+      <li class="hover:underline list-none xl:text-xl lg:text-base text-xs pt-6">Learn</li>
+      <button class="rotate-90 xl:text-lg lg:text-base text-xs font-bold mt-1.5 lg:mt-4 xl:mt-0 sm:mt-2" type="button">></button> 
+      <li class="hover:underline list-none xl:text-xl lg:text-base text-xs pt-6">Log in</li>
+    </div>
+    <div><button class="text-white font-bold xl:px-5 xl:py-4 px-4 lg:py-3.5 sm:py-2 py-2 bg-green-600
+      xl:text-xl sm:text-base lg:text-sm text-xs rounded-lg text-center lg:mt-2 mt-5 sm:mt-3 hover:opacity-80 shadow-lg
       duration-150" type="button">Try For Free</button></div>
   </nav>
 </section>
 <!-- Easy section -->
 <section class="bg-yellow-50">
-    <header class="flex justify-center gap-[100px] pt-20">
-      <div class="right">
-        <h1 class="text-green-900 font-bold text-6xl pt-10 pb-6" >The easiest way <br>to sell online in <br>India</h1>
-        <p class="text-green-800 text-[26px] leading-8 pb-10">Try one of the most powerful platforms <br> on the market for free. No technical <br>
+    <header class="flex flex-col-reverse justify-center items-center sm:flex-row sm:justify-center 2xl:gap-[100px] xl:gap-[80px] sm:gap-[40px] sm:pt-20">
+      <div class="left sm:-mt-28">
+        <h1 class="text-green-900 font-bold 2xl:text-6xl xl:text-5xl lg:text-3xl text-2xl sm:pt-10 pb-6 text-center sm:text-justify">The easiest way <br>to sell online in <br>India</h1>
+        <p class="text-green-800 2xl:text-[26px] xl:text-[20px] lg:text-[15px] text-[12px]
+                    2xl:leading-8 xl:leading-6 lg:leading-4 leading-4 xl:pb-10 pb-6 text-center sm:text-justify">Try one of the most powerful platforms <br> on the market for free. No technical <br>
         knowledge needed.</p>
-        <div class="flex">
-          <input type="email" placeholder="Enter your email address" class="pl-3 pr-32 py-3 text-xl
-          text-gray-400 bg-white rounded-lg hover:border border border-gray-200 mr-6
-          hover:border-black">
-         <button class="text-white font-bold px-7 py-4 bg-green-600 text-xl rounded-lg text-center
+        <div class="flex mb-10 sm:mb-0">
+          <input type="email" placeholder="Enter your email address" class="pl-3 2xl:pr-32 lg:pr-24 pr-12 2xl:py-3 py-2 2xl:text-xl lg:text-base text-sm
+          text-gray-400 bg-white rounded-lg hover:border border border-gray-200 mr-6 hover:border-black">
+         <button class="text-white font-bold 2xl:px-7 lg:px-5 px-3 2xl:py-4 lg:py-2 bg-green-600 2xl:text-xl lg:text-base text-sm rounded-lg text-center sm:-ml-4
           hover:opacity-80 shadow-lg duration-150" type="button">Try For Free</button>
         </div>
       </div>
-      <div class="left">
-        <video class="w-[700px] h-[500px] mb-20" autoplay loop muted src="images/launch your e-commerce.mp4"></video>
+      <div class="right">
+        <video class="2xl:w-[700px] 2xl:h-[500px] xl:w-[600px] xl:h-[400px] w-[350px] h-[350px] sm:mb-20" autoplay loop muted src="images/launch your e-commerce.mp4"></video>
       </div>
     </header>
 </section>
 <!-- Bring your business section -->
   <main class="bg-green-900 pb-4">
-    <section class="flex justify-evenly pt-20 pb-24">
+    <section class="flex flex-col justify-center items-center sm:flex-row sm:justify-evenly pt-20 pb-10 sm:pb-24">
       <div>
-      <h1 class="text-white text-5xl font-sans pb-4">Bring your business online</h1>
-      <p class="text-white text-xl font-sans">Create an e-commerce website backed 
+      <h1 class="text-white 2xl:text-5xl lg:text-3xl text-2xl ml-3 lg:ml-0 font-sans pb-4 text-center sm:text-justify">Bring your business online</h1>
+      <p class="text-white 2xl:text-xl lg:text-sm text-[10px] ml-3 lg:ml-0 font-sans text-center sm:text-justify">Create an e-commerce website backed 
         by powerful tools that help you find customers,drive slaes,and manage your day-to-day.
       </p>
       </div>
-      <div class="text-white text-2xl font-sans pt-8 cursor-pointer"><a href="#">Explore more examples -></a></div>
+      <div class="text-white 2xl:text-2xl lg:text-base text-[16px] font-sans 2xl:pt-8 pt-6 cursor-pointer text-center sm:text-justify"><a href="#">Explore more examples -></a></div>
       
     </section>
-    <section class="cards flex justify-center gap-7 mb-16">
+    <section class="cards flex flex-col justify-center items-center sm:flex-row sm:justify-center 2xl:gap-7 xl:gap-12 lg:gap-7 gap-12 sm:gap-2 mb-10">
       <div>
-        <img class="pb-3 cursor-pointer" src="images/business-1.webp" alt="food1">
-        <h1 class="text-white font-bold text-lg hover:underline">FOOD & Drink</h1>
-        <h2 class="text-white text-lg">Blue Tokai</h2>
+        <img class="pb-3 sm:w-[140px] lg:w-[175px] h-[375px] 2xl:w-auto 2xl:h-auto cursor-pointer" src="images/business-1.webp" alt="food1">
+        <h1 class="text-white font-bold text-base 2xl:text-lg hover:underline text-center sm:text-justify">FOOD & Drink</h1>
+        <h2 class="text-white 2xl:text-lg text-sm text-center sm:text-justify">Blue Tokai</h2>
       </div>
       <div>
-        <img class="pb-3 cursor-pointer" src="images/business-2.webp" alt="food2">
-        <h1 class="text-white font-bold text-lg hover:underline">JEWELRY</h1>
-        <h2 class="text-white text-lg">Quirksmith</h2>
+        <img class="pb-3 sm:w-[140px] lg:w-[175px] h-[375px] 2xl:w-auto 2xl:h-auto cursor-pointer" src="images/business-2.webp" alt="food2">
+        <h1 class="text-white font-bold text-base 2xl:text-lg hover:underline text-center sm:text-justify">JEWELRY</h1>
+        <h2 class="text-white 2xl:text-lg text-sm text-center sm:text-justify">Quirksmith</h2>
       </div>
       <div>
-        <img class="pb-3 cursor-pointer" src="images/business-3.webp" alt="food3">
-        <h1 class="text-white font-bold text-lg hover:underline">ELECTRONICS</h1>
-        <h2 class="text-white text-lg">Crossbeats</h2>
+        <img class="pb-3 sm:w-[140px] lg:w-[175px] h-[375px] 2xl:w-auto 2xl:h-auto cursor-pointer" src="images/business-3.webp" alt="food3">
+        <h1 class="text-white font-bold text-base 2xl:text-lg hover:underline text-center sm:text-justify">ELECTRONICS</h1>
+        <h2 class="text-white 2xl:text-lg text-sm text-center sm:text-justify">Crossbeats</h2>
       </div>
       <div>
-        <img class="pb-3 cursor-pointer" src="images/business-4.webp" alt="food4">
-        <h1 class="text-white font-bold text-lg hover:underline">Beauty</h1>
-        <h2 class="text-white text-lg">Mcaffeine</h2>
+        <img class="pb-3 sm:w-[140px] lg:w-[175px] h-[375px] 2xl:w-auto 2xl:h-auto cursor-pointer" src="images/business-4.webp" alt="food4">
+        <h1 class="text-white font-bold text-base 2xl:text-lg hover:underline text-center sm:text-justify">Beauty</h1>
+        <h2 class="text-white 2xl:text-lg text-sm text-center sm:text-justify">Mcaffeine</h2>
       </div>
       <div>
-        <img class="pb-3 cursor-pointer" src="images/business-5.webp" alt="food5">
-        <h1 class="text-white font-bold text-lg hover:underline">FASHION</h1>
-        <h2 class="text-white text-lg">Bunaai</h2>
+        <img class="pb-3 sm:w-[140px] lg:w-[175px] h-[375px] 2xl:w-auto 2xl:h-auto cursor-pointer" src="images/business-5.webp" alt="food5">
+        <h1 class="text-white font-bold text-base 2xl:text-lg hover:underline text-center sm:text-justify">FASHION</h1>
+        <h2 class="text-white 2xl:text-lg text-sm text-center sm:text-justify">Bunaai</h2>
       </div>
     </section>
-    <h1 class="text-white text-5xl font-sans pb-20 pl-[45px]">Take the best path forward</h1>
-    <section class="flex justify-evenly gap-24 mb-16">
+    <h1 class="text-white text-center sm:text-justify text-xl lg:text-3xl 2xl:text-5xl font-sans sm:pb-20 pb-8 pl-[20px] xl:pl-[100px] 2xl:pl-[45px]">Take the best path forward</h1>
+    <section class="flex flex-col justify-center items-center sm:flex-row sm:justify-evenly gap-10 sm:gap-0 lg:gap-20 xl:gap-4 2xl:gap-24 mb-16">
       <div>
-        <img class="w-16 pb-4 cursor-pointer" src="images/online-business.svg" alt="start1">
-        <h1 class="text-white font-bold text-2xl pb-3" >Start an online <br>business</h1>
-        <p class="text-white text-xl text-left" >Create a business, whether <br>you´ve got a fresh idea or <br> 
+        <img class="2xl:w-16 lg:w-12 w-8 pb-4 cursor-pointer ml-[55px] sm:ml-0" src="images/online-business.svg" alt="start1">
+        <h1 class="text-white font-bold text-sm lg:text-base 2xl:text-2xl pb-3 text-center sm:text-justify" >Start an online <br>business</h1>
+        <p class="text-white text-xs lg:text-sm 2xl:text-xl text-left text-center sm:text-justify">Create a business, whether <br>you´ve got a fresh idea or <br> 
            are looking for a new way to <br>make money.</p>
       </div>
       <div>
-        <img class="w-16 pb-4 cursor-pointer" src="images/online-business.svg" alt="start2">
-        <h1 class="text-white font-bold text-2xl pb-3" >Move your business <br>online</h1>
-        <p class="text-white text-xl text-left" >Create a business, whether <br>you´ve got a fresh idea or <br> 
+        <img class="2xl:w-16 w-12 w-8 pb-4 cursor-pointer ml-[55px] sm:ml-0" src="images/online-business.svg" alt="start2">
+        <h1 class="text-white font-bold text-sm lg:text-base 2xl:text-2xl pb-3 text-center sm:text-justify" >Move your business <br>online</h1>
+        <p class="text-white text-xs lg:text-sm 2xl:text-xl text-left text-center sm:text-justify" >Create a business, whether <br>you´ve got a fresh idea or <br> 
            are looking for a new way to <br>make money.</p>
       </div>
       <div>
-        <img class="w-16 pb-4 cursor-pointer" src="images/switch-shopify.svg" alt="start3">
-        <h1 class="text-white font-bold text-2xl pb-3" >Switch to Shopify</h1>
-        <p class="text-white text-xl text-left" >Create a business, whether <br>you´ve got a fresh idea or <br> 
+        <img class="2xl:w-16 w-12 w-8 pb-4 cursor-pointer ml-[55px] sm:ml-0" src="images/switch-shopify.svg" alt="start3">
+        <h1 class="text-white font-bold text-sm lg:text-base 2xl:text-2xl pb-3 text-center sm:text-justify" >Switch to Shopify</h1>
+        <p class="text-white text-xs lg:text-sm 2xl:text-xl text-left text-center sm:text-justify" >Create a business, whether <br>you´ve got a fresh idea or <br> 
            are looking for a new way to <br>make money.</p>
       </div>
       <div>
-        <img class="w-16 pb-4 cursor-pointer" src="images/hire support.svg" alt="start4">
-        <h1 class="text-white font-bold text-2xl pb-3" >Hire a Shopify expert</h1>
-        <p class="text-white text-xl text-left" >Create a business, whether <br>you´ve got a fresh idea or <br> 
+        <img class="2xl:w-16 w-12 w-8 pb-4 cursor-pointer ml-[55px] sm:ml-0" src="images/hire support.svg" alt="start4">
+        <h1 class="text-white font-bold text-sm lg:text-base 2xl:text-2xl pb-3 text-center sm:text-justify" >Hire a Shopify expert</h1>
+        <p class="text-white text-xs lg:text-sm 2xl:text-xl text-left text-center sm:text-justify" >Create a business, whether <br>you´ve got a fresh idea or <br> 
            are looking for a new way to <br>make money.</p>
       </div>
     </section>
   </main>
 <!-- With you section -->
   <section>
-    <h1 class="pt-[165px] pb-10 text-black font-sans font-bold text-5xl text-center">With you wherever you´re going</h1>
-    <p class="text-center text-gray-600 text-3xl ">One platform with all the ecommerce and point of sale features <br>
+    <h1 class="pt-[165px] pb-10 text-black font-sans font-bold text-xl sm:text-3xl 2xl:text-5xl text-center">With you wherever you´re going</h1>
+    <p class="text-center text-gray-600 text-sm sm:text-2xl 2xl:text-3xl ">One platform with all the ecommerce and point of sale features <br>
        you need to start,run,and grow your business.</p>
-    <main class="flex justify-around flex-row-reverse">
-      <div class="pt-[150px] pr-[200px]">
-        <h1 class="text-black font-sans text-5xl pb-8">Sell everywhere</h1>
-        <p class="text-black font-sans text-2xl pb-8">Use one platform to sell products to anyone <br> anywhere-in person with Point of sale and online <br>
+    <main class="flex flex-col-reverse justify-center items-center sm:flex-row-reverse sm:justify-around">
+      <div class="sm:pt-[80px] 2xl:pr-[200px]">
+        <h1 class="text-black font-sans text-lg lg:text-3xl 2xl:text-5xl pb-4 2xl:pb-8 text-center sm:text-justify">Sell everywhere</h1>
+        <p class="text-black font-sans text-sm lg:text-sm 2xl:text-2xl pb-4 2xl:pb-8 text-center sm:text-justify">Use one platform to sell products to anyone <br> anywhere-in person with Point of sale and online <br>
            through your website, social media,and online <br>marketplaces.</p>
-        <a href="#" class="text-green-800 font-medium text-2xl font-sans pt-8 cursor-pointer">Explore ways to sell -></a>
+        <a href="#" class="text-green-800 font-medium text-sm lg:text-lg 2xl:text-2xl font-sans pt-8 cursor-pointer ml-20 sm:ml-0">Explore ways to sell -></a>
       </div>
-      <div><video class="w-[700px] h-[500px] pt-20 cursor-pointer" autoPlay loop muted src="images/sell everything.mp4"></video></div>
+      <div><video class="lg:w-[700px] w-[300px] 2xl:h-[500px] h-[400px] sm:pt-20 cursor-pointer" autoPlay loop muted src="images/sell everything.mp4"></video></div>
     </main>
 
-    <main class="flex justify-around">
-      <div class="pt-[250px] pl-[95px]">
-        <h1 class="text-black font-sans text-5xl pb-8">Market your business</h1>
-        <p class="text-black font-sans text-2xl pb-8">Take the guesswork out of marketing with built-in <br>tools that help you create,execute,and analyze <br>
+    <main class="flex flex-col-reverse justify-center items-center sm:flex-row sm:justify-around">
+      <div class="pt-[100px] sm:pt-[100px] lg:pl-[95px]">
+        <h1 class="text-black font-sans text-lg lg:text-3xl 2xl:text-5xl pb-4 2xl:pb-8 text-center sm:text-justify">Market your business</h1>
+        <p class="text-black font-sans text-sm lg:text-sm 2xl:text-2xl pb-4 2xl:pb-8 text-center sm:text-justify">Take the guesswork out of marketing with built-in <br>tools that help you create,execute,and analyze <br>
            digital marketing campaigns.</p>
-        <a href="#" class="text-green-800 font-medium text-2xl font-sans pt-8 cursor-pointer">Explore how to market your business -></a>
+        <a href="#" class="text-green-800 font-medium text-sm lg:text-lg 2xl:text-2xl font-sans pt-8 cursor-pointer ml-10 sm:ml-0">Explore how to market your business -></a>
       </div>
-      <div><img class="w-[800px] h-[700px] pt-20 pr-36 cursor-pointer" src="images/market-business.jpg" alt="pic"></div>
+      <div><img class="2xl:w-[800px] 2xl:h-[700px] lg:w-[500px] lg:h-[500px] w-[350px] pt-20 2xl:pr-36 cursor-pointer" src="images/market-business.jpg" alt="pic"></div>
     </main>
   
-    <main class="flex justify-around flex-row-reverse pb-36">
-      <div class="pt-[200px] pr-[210px]">
-        <h1 class="text-black font-sans text-5xl pb-8">Manage everything</h1>
-        <p class="text-black font-sans text-2xl pb-8">Gain the insights you need to grow-use a single <br> dashboard to manage orders,shipping,and payments<br>
+    <main class="flex flex-col-reverse justify-center items-center sm:justify-around sm:flex-row-reverse pb-36">
+      <div class="pt-[100px] 2xl:pr-[210px]">
+        <h1 class="text-black font-sans text-lg lg:text-3xl 2xl:text-5xl pb-4 2xl:pb-8 text-center sm:text-justify">Manage everything</h1>
+        <p class="text-black font-sans text-sm lg:text-sm 2xl:text-2xl pb-4 2xl:pb-8 text-center sm:text-justify">Gain the insights you need to grow-use a single <br> dashboard to manage orders,shipping,and payments<br>
            anywhere you go.</p>
-        <a href="#" class="text-green-800 font-medium text-2xl font-sans pt-8 cursor-pointer">Explore how to manage your business -></a>
+        <a href="#" class="text-green-800 font-medium text-sm lg:text-lg 2xl:text-2xl font-sans pt-8 cursor-pointer ml-10 sm:ml-0">Explore how to manage your business -></a>
       </div>
-      <div><img class="w-[700px] ml-10 pt-20 cursor-pointer" src="images/manage everything.svg" alt="pic"></div>
+      <div><img class="2xl:w-[700px] lg:w-[600px] w-[400px] lg:ml-10 pt-24 sm:pt-32 lg:pt-20 cursor-pointer" src="images/manage everything.svg" alt="pic"></div>
     </main>
   </section>
 <!-- Explore more section -->
 <section class="bg-green-50">
-<h1 class="text-green-800 font-normal text-5xl pl-32 pt-36">Explore more from Shopify in India</h1>
-<main class="flex justify-evenly pb-36">
-  <div class="mt-[48px] pr-[150px] ml-[130px] pl-4 pt-2 bg-white">
-    <h1 class="text-black font-sans font-bold text-lg mb-14">START</h1>
-    <h1 class="text-black font-sans text-3xl pb-5">Launch your store with the help of <br>Shopify Expert</h1>
-    <p class="text-black font-sans text-sm pb-8">Find hundreds of experts from India ready to help you get your store up and <br> 
+<h1 class="text-green-800 font-normal text-lg lg:text-2xl xl:text-3xl 2xl:text-5xl lg:pl-12 xl:pl-32 pt-36 text-center lg:text-justify">Explore more from Shopify in India</h1>
+<main class="flex flex-col-reverse justify-center items-center sm:flex-row pb-36">
+  <div class="mt-[48px] sm:ml-[25px] lg:ml-[50px] xl:ml-[30px] pl-4 pr-4 sm:pr-0 pt-2 bg-white">
+     <h1 class="text-black font-sans font-bold text-sm xl:text-base 2xl:text-lg mb-4 xl:mb-8 2xl:mb-14 text-center lg:text-justify">START</h1>
+     <h1 class="text-black font-sans text-[15px] lg:text-base xl:text-lg 2xl:text-3xl pb-4 xl:pb-5 text-center lg:text-justify">Launch your store with the help of <br>Shopify Expert</h1>
+     <p class="text-black font-sans text-[10px] xl:text-xs 2xl:text-sm pb-4 xl:pb-6 2xl:pb-8 text-center lg:text-justify">Find hundreds of experts from India ready to help you get your store up and <br> 
       running,from choosing a theme to building a fully customized site.</p>
-    <a href="#" class="text-green-700 font-medium text-xl font-sans pt-8 cursor-pointer">Explore how to manage your business -></a>
+     <a href="#" class="text-green-700 font-medium text-xs xl:text-sm 2xl:text-xl font-sans pt-8 cursor-pointer pl-16 sm:pl-0">Explore how to manage your business -></a>
+  <div class="w-[350px] pb-4 md:pb-0 lg:w-[500px] 2xl:w-[700px] cursor-pointer sm:ml-[350px] lg:ml-[405px] xl:ml-[510px] sm:mt-[-178px] xl:mt-[-220px] 2xl:mt-[-284px]">
+     <img class="h-[250px] mt-6 sm:mt-0  2xl:h-auto" src="images/person.jpg" alt="pic">
   </div>
-  <div><img class="w-[700px] pt-12 pr-20 mr-[67px] cursor-pointer" src="images/person.jpg" alt="pic"></div>
 </main>
 </section>
 </section>
 <!-- Empowering section -->
 <section class="bg-yellow-50">
- <h1 class="text-black font-normal text-5xl pl-32 pt-36">Empowering independent business owners <br>everywhere</h1>
- <p class="text-black font-sans text-lg pb-3 pl-32 pt-8">Millins of business in <span class="font-bold">175 countries</span> around the world have made over 
+ <h1 class="text-black font-normal text-xl sm:text-2xl xl:text-4xl 2xl:text-5xl sm:pl-32 pt-36 text-center sm:text-justify">Empowering independent business owners <br>everywhere</h1>
+ <p class="text-black font-sans text-[12px] xl:text-sm 2xl:text-lg pb-3 sm:pl-32 pt-8 text-center sm:text-justify">Millins of business in <span class="font-bold">175 countries</span> around the world have made over 
     <span class="font-bold">$496 <br> billion USD</span> in sales using Shopify.</p>
- <a href="#" class="text-green-700 font-medium text-2xl font-sans pl-32 cursor-pointer">
+ <a href="#" class="text-green-700 font-medium text-base xl:text-lg 2xl:text-2xl font-sans pl-24 sm:pl-32 cursor-pointer">
       Learn more about Shopify -></a>
- <img class="pl-[220px] cursor-pointer" src="images/world.png" alt="Globe">
+ <img class="lg:pl-[20px] xl:pl-[70px] 2xl:pl-[220px] cursor-pointer" src="images/world.png" alt="Globe">
 
- <div class="Alicia-review flex justify-center mb-16">
-  <div class="cursor-pointer"><img src="images/girl.jpg" alt="girl"></div>
-    <div class="bg-green-900 px-[100px]">
-       <p class="text-white font-normal text-2xl pb-20 text-center pt-20">"Shopify was my knight in shining armor when I <br>
+ <div class="Alicia-review flex flex-col justify-center items-center sm:flex-row sm:justify-center mb-16 gap-10 sm:gap-0">
+  <div class="cursor-pointer w-[380px] sm:w-[273px] lg:w-[370px] xl:w-[467px] 2xl:w-[517px]"><img src="images/girl.jpg" alt="girl"></div>
+    <div class="bg-green-900 px-[70px] xl:px-[80px] 2xl:px-[100px]">
+       <p class="text-white font-normal text-[10px] lg:text-xs xl:text-base 2xl:text-2xl pb-10 lg:pb-20 text-center pt-12 lg:pt-20">"Shopify was my knight in shining armor when I <br>
        exhausted every other possibility of getting my online <br>
        store up and running. It was stunningly easy to use,with <br>
        more features and plug-ins that I didn´t even know I <br>
        wanted."</p>
-      <img class="pl-56 mb-4 cursor-pointer" src="images/alice spuza.png" alt="alicia">
-      <h1 class="text-white font-bold pl-[230px]">Alicia | Slicia Souza</h1>
+      <img class="2xl:pl-56 lg:pl-28 pl-[90px] mb-4 h-[30px] xl:h-auto cursor-pointer" src="images/alice spuza.png" alt="alicia">
+      <h1 class="text-white text-[9px] lg:text-xs font-bold pl-[90px] pb-8 sm:pb-0 lg:pl-[100px] xl:pl-[130px] 2xl:pl-[230px]">Alicia | Slicia Souza</h1>
     </div>
  </div>
 
- <div class="bottom-logos flex justify-around mb-52 cursor-pointer">
+ <div class="bottom-logos flex flex-col justify-center items-center sm:flex-row sm:justify-around mb-10 sm:mb-52 cursor-pointer gap-10 sm:gap-0">
     <img src="images/logo-1.png" alt="1">
     <img src="images/logo-2.png" alt="2">
     <img src="images/logo-3.png" alt="3">
@@ -204,128 +213,129 @@
     <img src="images/logo-7.png" alt="7">
  </div>
 
- <div class="Get-the-help flex justify-between">
+ <div class="Get-the-help flex flex-col-reverse justify-center items-center sm:flex-row sm:justify-between">
     <div class="left">
-       <h1 class="text-black font-normal text-4xl pt-5 pb-11 pl-32">Get the help you need, <br>
+       <h1 class="text-black font-normal text-sm lg:text-base xl:text-2xl 2xl:text-4xl pt-5 pb-11 sm:pl-32 text-center sm:text-justify">Get the help you need, <br>
            every step of the way</h1>
-      <section class="flex pb-8">
+      <section class="flex flex-col justify-center items-center gap-8 sm:gap-0 sm:flex-row pb-8">
         <div>
-          <h1 class="text-black font-bold pl-32 text-2xl pb-3">Shopify support</h1>
-          <p class="text-gray-600 text-lg pl-32 pb-3 leading-6">Contact support 24/7,whether you´re <br>troubleshooting issues or looking for <br>
+          <h1 class="text-black font-bold sm:pl-32 text-xs lg:text-base xl:text-xl 2xl:text-2xl pb-3 text-center sm:text-justify">Shopify support</h1>
+          <p class="text-gray-600 text-[9px] lg:text-xs xl:text-sm 2xl:text-lg sm:pl-32 pb-3 lg:leading-4 xl:leading-6 text-center sm:text-justify">Contact support 24/7,whether you´re <br>troubleshooting issues or looking for <br>
              business advice.</p>
-          <a href="#" class="text-green-700 font-medium text-xl font-sans pl-32 cursor-pointer">Learn more about Shopify -></a>
+          <a href="#" class="text-green-700 font-medium text-[9px] lg:text-xs xl:text-base 2xl:text-xl font-sans pl-5 sm:pl-32 cursor-pointer">Learn more about Shopify -></a>
         </div>
         <div>
-          <h1 class="text-black font-bold pl-32 text-2xl pb-3">Shopify App Stote</h1>
-          <p class="text-gray-600 text-lg pl-32 pb-3 leading-6">Add features and functionality to your <br>business with 6,000+ apps that <br>
+          <h1 class="text-black font-bold sm:pl-32 text-xs lg:text-base xl:text-xl 2xl:text-2xl pb-3 text-center sm:text-justify">Shopify App Stote</h1>
+          <p class="text-gray-600 text-[9px] lg:text-xs xl:text-sm 2xl:text-lg sm:pl-32 pb-3 lg:leading-4 xl:leading-6 text-center sm:text-justify">Add features and functionality to your <br>business with 6,000+ apps that <br>
              integrate directly with shopify.</p>
-          <a href="#" class="text-green-700 font-medium text-xl font-sans pl-32 cursor-pointer">Visit the shopify App Store -></a>
+          <a href="#" class="text-green-700 font-medium text-[9px] lg:text-xs xl:text-base 2xl:text-xl font-sans sm:pl-32 cursor-pointer pl-5">Visit the shopify App Store -></a>
         </div>
       </section>
-      <div>
-        <h1 class="text-black font-bold pl-32 text-2xl pb-3">Shopify Experts Marketplace</h1>
-        <p class="text-gray-600 text-lg pl-32 leading-6 pb-3">Hire a Shopify to help you with everything from store setup to <br>SEO:</p>
-        <a href="#" class="text-green-700 font-medium text-xl font-sans pl-32 cursor-pointer">Explore the Shopify Experts Marketplace -></a>
+      <div class="pb-7 sm:pb-0">
+        <h1 class="text-black font-bold sm:pl-32 text-xs lg:text-base xl:text-xl 2xl:text-2xl pb-3 text-center sm:text-justify">Shopify Experts Marketplace</h1>
+        <p class="text-gray-600 text-[9px] lg:text-xs xl:text-sm 2xl:text-lg sm:pl-32 lg:leading-4 xl:leading-6 pb-3 text-center sm:text-justify">Hire a Shopify to help you with everything from store setup to <br>SEO:</p>
+        <a href="#" class="text-green-700 font-medium text-[9px] lg:text-xs xl:text-base 2xl:text-xl font-sans sm:pl-32 cursor-pointer pl-10">Explore the Shopify Experts Marketplace -></a>
       </div>
     </div>
-    <div class=" right cursor-pointer w-[650px]">
-      <img src="images/help.webp" alt="help">
+    <div class="right cursor-pointer lg:w-[350px] xl:w-[550px] 2xl:w-[650px]">
+      <img class="w-[350px] md:h-[420px] md:w-[200px] lg:h-auto lg:w-auto lg:mt-6 xl:mt-0" src="images/help.webp" alt="help">
     </div>
  </div>
 </section>
 <!-- Start your journey and Footer section -->
 <div class="pt-[80px] pb-[80px]">
-  <h1 class="text-center text-black font-normal text-4xl mb-6">Start your business journey with Shopify</h1>
-  <p class="text-center text-gray-600 text-2xl mb-5">Try Shopify for free,and explore all the tools and services you need to start,
+  <h1 class="text-center text-black font-normal text-sm lg:text-lg xl:text-2xl 2xl:text-4xl mb-6">Start your business journey with Shopify</h1>
+  <p class="text-center text-gray-600 text-sm lg:text-base xl:text-lg 2xl:text-2xl mb-5">Try Shopify for free,and explore all the tools and services you need to start,
     run,and grow <br>your business.</p>
-  <button class="text-white font-bold px-7 py-4 bg-green-600 text-xl rounded-lg text-center
-     hover:opacity-80 shadow-lg duration-150 ml-[670px]" type="button">Start Free Trail</button>
-  <a class="text-green-800 font-normal text-2xl ml-[1320px]" href="#">Back to top <button class="-rotate-90" type="button">-></button></a>
+  <button class="text-white font-bold lg:px-7 lg:py-4 px-5 py-3 bg-green-600 text-base lg:text-xl rounded-lg text-center
+     hover:opacity-80 shadow-lg duration-150 ml-[135px] md:ml-[295px] lg:ml-[420px] xl:ml-[540px] 2xl:ml-[670px]" type="button">Start Free Trail</button>
+  <a class="text-green-800 font-normal text-sm md:text-lg lg:text-2xl ml-[300px] md:ml-[620px] lg:ml-[850px] xl:ml-[1100px] 2xl:ml-[1320px]" href="#">Back to top <button class="-rotate-90" type="button">-></button></a>
 </div>
 
 <footer class="bg-green-900">
-    <div class="flex pt-7 pb-7 gap-10 ml-24">
-       <li class="text-2xl text-white cursor-pointer hover:underline list-none" >About</li>
-       <li class="text-2xl text-white cursor-pointer hover:underline list-none" >Careers</li>
-       <li class="text-2xl text-white cursor-pointer hover:underline list-none" >Press and Media</li>
-       <li class="text-2xl text-white cursor-pointer hover:underline list-none" >Shopify Plus</li>
-       <li class="text-2xl text-white cursor-pointer hover:underline list-none" >Sitemap</li>
+    <div class="flex flex-col justify-center items-center sm:flex-row pt-7 pb-7 md:gap-5 lg:gap-10 ml-[12px] lg:ml-[53px] xl:ml-20 2xl:ml-24">
+       <li class="text-2xl md:text-base lg:text-xl xl:text-2xl text-white cursor-pointer hover:underline list-none" >About</li>
+       <li class="text-2xl md:text-base lg:text-xl xl:text-2xl text-white cursor-pointer hover:underline list-none" >Careers</li>
+       <li class="text-2xl md:text-base lg:text-xl xl:text-2xl text-white cursor-pointer hover:underline list-none" >Press and Media</li>
+       <li class="text-2xl md:text-base lg:text-xl xl:text-2xl text-white cursor-pointer hover:underline list-none" >Shopify Plus</li>
+       <li class="text-2xl md:text-base lg:text-xl xl:text-2xl text-white cursor-pointer hover:underline list-none" >Sitemap</li>
     </div>
 
-    <div class="w-[1355px] border-b border-gray-400 ml-[90px] mb-10"></div>
+    <div class="w-[380px] sm:w-[730px] lg:w-[900px] xl:w-[1130px] 2xl:w-[1355px] border-b border-gray-400 ml-[10px] lg:ml-[52px] xl:ml-[75px] 2xl:ml-[90px] mb-10"></div>
 
-    <div class="flex justify-center gap-[75px] mb-10">
+    <div class="flex flex-col justify-center items-center sm:flex-row sm:justify-center 
+                 gap-[20px] md:gap-[17px] lg:gap-[30px] xl:gap-[30px] 2xl:gap-[75px] mb-10">
       <div class="list-none">
-        <li class="text-gray-200 hover:text-gray-300 font-bold text-xl mb-3 cursor-pointer">ONLINE STORE</li>
-        <li class="text-gray-200 hover:text-gray-300 text-lg cursor-pointer">Features</li>
-        <li class="text-gray-200 hover:text-gray-300 text-lg cursor-pointer">Examples</li>
-        <li class="text-gray-200 hover:text-gray-300 text-lg cursor-pointer">Sell Online</li>
-        <li class="text-gray-200 hover:text-gray-300 text-lg cursor-pointer">Website Builder</li>
-        <li class="text-gray-200 hover:text-gray-300 text-lg cursor-pointer">Online Retail</li>
+        <li class="text-gray-200 hover:text-gray-300 font-bold text-2xl sm:text-sm lg:text-base xl:text-xl mb-3 cursor-pointer text-center sm:text-justify">ONLINE STORE</li>
+        <li class="text-gray-200 hover:text-gray-300 text-xl sm:text-xs lg:text-sm xl:text-lg cursor-pointer text-center sm:text-justify">Features</li>
+        <li class="text-gray-200 hover:text-gray-300 text-xl sm:text-xs lg:text-sm xl:text-lg cursor-pointer text-center sm:text-justify">Examples</li>
+        <li class="text-gray-200 hover:text-gray-300 text-xl sm:text-xs lg:text-sm xl:text-lg cursor-pointer text-center sm:text-justify">Sell Online</li>
+        <li class="text-gray-200 hover:text-gray-300 text-xl sm:text-xs lg:text-sm xl:text-lg cursor-pointer text-center sm:text-justify">Website Builder</li>
+        <li class="text-gray-200 hover:text-gray-300 text-xl sm:text-xs lg:text-sm xl:text-lg cursor-pointer text-center sm:text-justify">Online Retail</li>
       </div>
-      <div class="list-none pt-10">
-        <li class="text-gray-200 hover:text-gray-300 text-lg cursor-pointer">Ecommerce Website</li>
-        <li class="text-gray-200 hover:text-gray-300 text-lg cursor-pointer">Domain Names</li>
-        <li class="text-gray-200 hover:text-gray-300 text-lg cursor-pointer">Themes</li>
-        <li class="text-gray-200 hover:text-gray-300 text-lg cursor-pointer">Shopping Cart</li>
-        <li class="text-gray-200 hover:text-gray-300 text-lg cursor-pointer">Ecommerce Hosting</li>
+      <div class="list-none sm:pt-10">
+        <li class="text-gray-200 hover:text-gray-300 text-xl sm:text-xs lg:text-sm xl:text-lg cursor-pointer text-center sm:text-justify">Ecommerce Website</li>
+        <li class="text-gray-200 hover:text-gray-300 text-xl sm:text-xs lg:text-sm xl:text-lg cursor-pointer text-center sm:text-justify">Domain Names</li>
+        <li class="text-gray-200 hover:text-gray-300 text-xl sm:text-xs lg:text-sm xl:text-lg cursor-pointer text-center sm:text-justify">Themes</li>
+        <li class="text-gray-200 hover:text-gray-300 text-xl sm:text-xs lg:text-sm xl:text-lg cursor-pointer text-center sm:text-justify">Shopping Cart</li>
+        <li class="text-gray-200 hover:text-gray-300 text-xl sm:text-xs lg:text-sm xl:text-lg cursor-pointer text-center sm:text-justify">Ecommerce Hosting</li>
       </div>
-      <div class="list-none pt-10">
-        <li class="text-gray-200 hover:text-gray-300 text-lg cursor-pointer">Mobile Commerce</li>
-        <li class="text-gray-200 hover:text-gray-300 text-lg cursor-pointer">Ecommerce Software</li>
-        <li class="text-gray-200 hover:text-gray-300 text-lg cursor-pointer">Online Store Builder</li>
-        <li class="text-gray-200 hover:text-gray-300 text-lg cursor-pointer">Dropshipping Business</li>
-        <li class="text-gray-200 hover:text-gray-300 text-lg cursor-pointer">Store Themes</li>
-      </div>
-      <div class="list-none">
-        <li class="text-gray-200 hover:text-gray-300 font-bold text-xl mb-3 cursor-pointer">POINT OF SALE</li>
-        <li class="text-gray-200 hover:text-gray-300 text-lg cursor-pointer">Point Of Sale</li>
-        <li class="text-gray-200 hover:text-gray-300 text-lg cursor-pointer">Features</li>
+      <div class="list-none sm:pt-10">
+        <li class="text-gray-200 hover:text-gray-300 text-xl sm:text-xs lg:text-sm xl:text-lg cursor-pointer text-center sm:text-justify">Mobile Commerce</li>
+        <li class="text-gray-200 hover:text-gray-300 text-xl sm:text-xs lg:text-sm xl:text-lg cursor-pointer text-center sm:text-justify">Ecommerce Software</li>
+        <li class="text-gray-200 hover:text-gray-300 text-xl sm:text-xs lg:text-sm xl:text-lg cursor-pointer text-center sm:text-justify">Online Store Builder</li>
+        <li class="text-gray-200 hover:text-gray-300 text-xl sm:text-xs lg:text-sm xl:text-lg cursor-pointer text-center sm:text-justify">Dropshipping Business</li>
+        <li class="text-gray-200 hover:text-gray-300 text-xl sm:text-xs lg:text-sm xl:text-lg cursor-pointer text-center sm:text-justify">Store Themes</li>
       </div>
       <div class="list-none">
-        <li class="text-gray-200 hover:text-gray-300 font-bold text-xl mb-3 cursor-pointer">SUPPORT</li>
-        <li class="text-gray-200 hover:text-gray-300 text-lg cursor-pointer">24/7 Support</li>
-        <li class="text-gray-200 hover:text-gray-300 text-lg cursor-pointer">Shopify Help Center</li>
-        <li class="text-gray-200 hover:text-gray-300 text-lg cursor-pointer">Shopify Community</li>
-        <li class="text-gray-200 hover:text-gray-300 text-lg cursor-pointer">API Documentation</li>
-        <li class="text-gray-200 hover:text-gray-300 text-lg cursor-pointer">Free Tools</li>
-        <li class="text-gray-200 hover:text-gray-300 text-lg cursor-pointer">Free Stock Photos</li>
-        <li class="text-gray-200 hover:text-gray-300 text-lg cursor-pointer">Website For Sale</li>
-        <li class="text-gray-200 hover:text-gray-300 text-lg cursor-pointer">Logo Maker</li>
-        <li class="text-gray-200 hover:text-gray-300 text-lg cursor-pointer">Business Name Generator</li>
-        <li class="text-gray-200 hover:text-gray-300 text-lg cursor-pointer">Research</li>
-        <li class="text-gray-200 hover:text-gray-300 text-lg cursor-pointer">Legal</li>
+        <li class="text-gray-200 hover:text-gray-300 font-bold text-2xl sm:text-sm lg:text-base xl:text-xl mb-3 cursor-pointer text-center sm:text-justify">POINT OF SALE</li>
+        <li class="text-gray-200 hover:text-gray-300 text-xl sm:text-xs lg:text-sm xl:text-lg cursor-pointer text-center sm:text-justify">Point Of Sale</li>
+        <li class="text-gray-200 hover:text-gray-300 text-xl sm:text-xs lg:text-sm xl:text-lg cursor-pointer text-center sm:text-justify">Features</li>
       </div>
       <div class="list-none">
-        <li class="text-gray-200 hover:text-gray-300 font-bold text-xl mb-3 cursor-pointer">SHOPIFY</li>
-        <li class="text-gray-200 hover:text-gray-300 text-lg cursor-pointer">Contact</li>
-        <li class="text-gray-200 hover:text-gray-300 text-lg cursor-pointer">Partner Program</li>
-        <li class="text-gray-200 hover:text-gray-300 text-lg cursor-pointer">Affilate Program</li>
-        <li class="text-gray-200 hover:text-gray-300 text-lg cursor-pointer">App Developers</li>
-        <li class="text-gray-200 hover:text-gray-300 text-lg cursor-pointer">Investors</li>
-        <li class="text-gray-200 hover:text-gray-300 text-lg cursor-pointer">Blog Topics</li>
-        <li class="text-gray-200 hover:text-gray-300 text-lg cursor-pointer">Community Events</li>
+        <li class="text-gray-200 hover:text-gray-300 font-bold text-2xl sm:text-sm lg:text-base xl:text-xl mb-3 cursor-pointer text-center sm:text-justify">SUPPORT</li>
+        <li class="text-gray-200 hover:text-gray-300 text-xl sm:text-xs lg:text-sm xl:text-lg cursor-pointer text-center sm:text-justify">24/7 Support</li>
+        <li class="text-gray-200 hover:text-gray-300 text-xl sm:text-xs lg:text-sm xl:text-lg cursor-pointer text-center sm:text-justify">Shopify Help Center</li>
+        <li class="text-gray-200 hover:text-gray-300 text-xl sm:text-xs lg:text-sm xl:text-lg cursor-pointer text-center sm:text-justify">Shopify Community</li>
+        <li class="text-gray-200 hover:text-gray-300 text-xl sm:text-xs lg:text-sm xl:text-lg cursor-pointer text-center sm:text-justify">API Documentation</li>
+        <li class="text-gray-200 hover:text-gray-300 text-xl sm:text-xs lg:text-sm xl:text-lg cursor-pointer text-center sm:text-justify">Free Tools</li>
+        <li class="text-gray-200 hover:text-gray-300 text-xl sm:text-xs lg:text-sm xl:text-lg cursor-pointer text-center sm:text-justify">Free Stock Photos</li>
+        <li class="text-gray-200 hover:text-gray-300 text-xl sm:text-xs lg:text-sm xl:text-lg cursor-pointer text-center sm:text-justify">Website For Sale</li>
+        <li class="text-gray-200 hover:text-gray-300 text-xl sm:text-xs lg:text-sm xl:text-lg cursor-pointer text-center sm:text-justify">Logo Maker</li>
+        <li class="text-gray-200 hover:text-gray-300 text-xl sm:text-xs lg:text-sm xl:text-lg cursor-pointer text-center sm:text-justify">Business Name Generator</li>
+        <li class="text-gray-200 hover:text-gray-300 text-xl sm:text-xs lg:text-sm xl:text-lg cursor-pointer text-center sm:text-justify">Research</li>
+        <li class="text-gray-200 hover:text-gray-300 text-xl sm:text-xs lg:text-sm xl:text-lg cursor-pointer text-center sm:text-justify">Legal</li>
+      </div>
+      <div class="list-none">
+        <li class="text-gray-200 hover:text-gray-300 font-bold text-2xl sm:text-sm lg:text-base xl:text-xl mb-3 cursor-pointer text-center sm:text-justify">SHOPIFY</li>
+        <li class="text-gray-200 hover:text-gray-300 text-xl sm:text-xs lg:text-sm xl:text-lg cursor-pointer text-center sm:text-justify">Contact</li>
+        <li class="text-gray-200 hover:text-gray-300 text-xl sm:text-xs lg:text-sm xl:text-lg cursor-pointer text-center sm:text-justify">Partner Program</li>
+        <li class="text-gray-200 hover:text-gray-300 text-xl sm:text-xs lg:text-sm xl:text-lg cursor-pointer text-center sm:text-justify">Affilate Program</li>
+        <li class="text-gray-200 hover:text-gray-300 text-xl sm:text-xs lg:text-sm xl:text-lg cursor-pointer text-center sm:text-justify">App Developers</li>
+        <li class="text-gray-200 hover:text-gray-300 text-xl sm:text-xs lg:text-sm xl:text-lg cursor-pointer text-center sm:text-justify">Investors</li>
+        <li class="text-gray-200 hover:text-gray-300 text-xl sm:text-xs lg:text-sm xl:text-lg cursor-pointer text-center sm:text-justify">Blog Topics</li>
+        <li class="text-gray-200 hover:text-gray-300 text-xl sm:text-xs lg:text-sm xl:text-lg cursor-pointer text-center sm:text-justify">Community Events</li>
       </div>
      </div>
 
-     <div class="w-[1355px] border-b border-gray-400 ml-[90px] mb-10"></div>
+     <div class="w-[380px] sm:w-[730px] lg:w-[900px] xl:w-[1130px] 2xl:w-[1355px] border-b border-gray-400 ml-[10px] lg:ml-[52px] xl:ml-[75px] 2xl:ml-[90px] mb-10"></div>
 
-    <div class="flex justify-between pb-6">
-      <div class="socialMedia flex gap-8 pl-[90px]">
-        <img class="w-8 h-8 cursor-pointer" src="images/fb.png" alt="fb">
-        <img class="w-8 h-8 cursor-pointer" src="images/tw.png" alt="tw">
-        <img class="w-8 h-8 cursor-pointer" src="images/yt.png" alt="yt">
-        <img class="w-8 h-8 cursor-pointer" src="images/ig.png" alt="int">
-        <img class="w-8 h-8 cursor-pointer" src="images/link.png" alt="link">
-        <img class="w-8 h-8 cursor-pointer" src="images/pin.png" alt="pin">
+    <div class="flex flex-col justify-center items-center gap-5 sm:gap-5 sm:flex-row sm:justify-between pb-6">
+      <div class="socialMedia flex gap-4 lg:gap-8 sm:pl-[10px] lg:pl-[40px] xl:pl-[90px]">
+        <img class="lg:w-8 lg:h-8 w-5 h-5 cursor-pointer" src="images/fb.png" alt="fb">
+        <img class="lg:w-8 lg:h-8 w-5 h-5 cursor-pointer" src="images/tw.png" alt="tw">
+        <img class="lg:w-8 lg:h-8 w-5 h-5 cursor-pointer" src="images/yt.png" alt="yt">
+        <img class="lg:w-8 lg:h-8 w-5 h-5 cursor-pointer" src="images/ig.png" alt="int">
+        <img class="lg:w-8 lg:h-8 w-5 h-5 cursor-pointer" src="images/link.png" alt="link">
+        <img class="lg:w-8 lg:h-8 w-5 h-5 cursor-pointer" src="images/pin.png" alt="pin">
       </div>
-      <div class="terms flex gap-8 pr-[90px]">
-         <h1 class="text-gray-200 hover:text-gray-300 text-lg cursor-pointer">Terms of services</h1>
-         <h1 class="text-gray-200 hover:text-gray-300 text-lg cursor-pointer">Privacy Policy</h1>
+      <div class="terms flex gap-3 lg:gap-6 xl:gap-8 sm:pr-[30px] mb-3 sm:pb-0 lg:pr-[90px]">
+         <h1 class="text-gray-200 hover:text-gray-300 text-sm lg:text-base xl:text-lg cursor-pointer">Terms of services</h1>
+         <h1 class="text-gray-200 hover:text-gray-300 text-sm lg:text-base xl:text-lg cursor-pointer">Privacy Policy</h1>
          <div class="flex gap-2">
-           <img class="w-6 h-6 mt-[3px] cursor-pointer" src="images/globe.png" alt="globe">
-           <h1 class="text-gray-200 hover:text-gray-300 text-lg cursor-pointer">Features</h1>
-           <button type="button" class="rotate-90 text-white text-xs cursor-pointer">></button>
+           <img class="lg:w-6 lg:h-6 w-3 h-3 mt-[4px] lg:mt-[3px] cursor-pointer" src="images/globe.png" alt="globe">
+           <h1 class="text-gray-200 hover:text-gray-300 text-sm lg:text-base xl:text-lg cursor-pointer">Features</h1>
+           <button type="button" class="rotate-90 text-white text-xs cursor-pointer lg:-mt-1 xl:mt-0">></button>
        </div>
       </div>
     </div>
